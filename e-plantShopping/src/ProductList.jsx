@@ -18,6 +18,7 @@ function ProductList() {
 
     const handleAddToCart = (product) => {
         dispatch(addItem(product));
+        alert('Item Added to cart');
         setAddedToCart((prevState) => ({
             ...prevState,
             [product.name]: true,
@@ -247,11 +248,11 @@ function ProductList() {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    width: '1100px',
+    width: '300px',
    }
    const styleA={
     color: 'white',
-    fontSize: '30px',
+    fontSize: '20px',
     textDecoration: 'none',
    }
    const handleCartClick = (e) => {
